@@ -2,24 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
 
 body{
-  background-color: #E5E5E5;
+  font-family: Poppins;
 }
 span{
-    color: #333333;
+  color: #333333;
 }
 header{
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 .top-nav{
-    position: absolute;
-    width: 100%;
-    height: 64px;
-    left: 0px;
-    top: 0px;
-    background:#333333 ;
+  position: absolute;
+  width: 100%;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+  background:#333333 ;
 }
 .update{
-   position: absolute;
+  position: absolute;
   width: 100&;
   height: 21px;
   left: 140px;
@@ -37,10 +37,11 @@ header{
 }
 .navbar{
 position: absolute;
-width: -moz-available;
+width: 100%;
 height: 80px;
+padding: 0;
 left: 0px;
-top: 64px;
+top: 55px;
 background: #F5FAFE;
 z-index:2px;
 }
@@ -48,41 +49,40 @@ span{
     color: #333333;
 }
 .sign{
-    position: absolute;
-    width: 127px;
-    height: 27px;
-    left: 1340px;
-    top: -30px; 
-    
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
+  position: absolute;
+  width: 127px;
+  height: 27px;
+  left: 1340px;
+  top: -30px; 
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
 }
 .navbar img{
-    position: absolute;
-width: 1440px;
-height: 120px;
-left: -490px;
-top: 5px;
-z-index: 2px;
+  position: absolute;
+  width: 1440px;
+  height: 120px;
+  left: -490px;
+  top: 5px;
+  z-index: 2px;
 }
 .language{
-    position: absolute;
-    width: 127px;
-    height: 27px;
-    left: 1215px;
-    top: -30px; 
-    
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px; 
+  position: absolute;
+  width: 127px;
+  height: 27px;
+  left: 1215px;
+  top: -30px; 
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px; 
 }
 .dropdown-content{
-    display: none;
+  display: none;
   position: absolute;
   background-color: #333333;
   min-width: 160px;
@@ -91,42 +91,46 @@ z-index: 2px;
   z-index: 1;
 }
 .language:hover .dropdown-content{
-    display: block;
+  display: block;
 }
 .nav-item{
-    font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 27px;
-color: #333333;
-position: absolute;
-left: 380px;
-top: 25px;
-display: block ruby;
-width: -moz-available;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  width: 1000px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #333333;
+  position: absolute;
+  left: 380px;
+  top: 25px;
+  display: block ruby;
+  width: -moz-available;
 
 }
 .nav-link{
-    padding-right: 30px;
-    color: #333333;
-    text-decoration: none;
+  padding-right: 30px;
+  color: #333333;
+  text-decoration: none;
 
 }
 .bg-img{
-    position: initial;
-    margin-top: 30px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
+  position: initial;
+  margin-top: 30px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
     
 }
 .bg-img2{
-    background-size: auto;
-    margin-top: 30px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+  background-size: auto;
+  margin-top: 30px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 /* START CUSTOM CSS */
 .btn-area div{
