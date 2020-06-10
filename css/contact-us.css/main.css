@@ -1,0 +1,13 @@
+/* main css using id selectors
+NOTE: All comments appear on the contact.html page
+*/
+
+#h01{ font-family: "Poppins Regular", times, serif
+width: 100px;}
+/* #h02{margin-left: auto; max-width: 550px} */
+#h03{font-size: 18px; line-height: 27px}
+#h04{font-size: 16px; line-height: 21px}
+#h05{font-size: 18px; line-height: 24px}
+#h06{width:16px; height:16px}
+#h07{resize: none; height: 270px;}
+#h08{width: 150px;height: 60px; background-color: #017A93; color: #f5fafe;}

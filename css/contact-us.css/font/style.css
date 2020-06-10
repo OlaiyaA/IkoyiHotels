@@ -1,0 +1,10 @@
+/* Font 
+NOTE: All comments appear on the contact.html page
+*/
+
+@font-face {
+font-family: 'Poppins Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Poppins Regular'), url('Poppins-Regular.woff') format('woff');
+}

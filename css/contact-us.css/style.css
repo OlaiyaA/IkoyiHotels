@@ -1,0 +1,258 @@
+
+
+/*the bottom part of footer*/
+.footer2{
+    background: url(New\ folder/rectangle\ 4.svg);
+    width: 100%;
+    position: relative;
+    margin: 0px;
+
+}
+/*another container having the three divisions with class name foot inside,
+it has background faded black so that the background can be faded*/
+.footer2-content{
+    background-color: rgba(0, 0, 0, 0.664);
+    background-position:center;
+    background-blend-mode:hard-light;
+    height: 300px;
+    display: flex;
+    margin: 0px;
+    padding: 100px 0 0 40px ;
+
+}
+.footer2-content .foot{
+    width: 30%;
+    color:white;
+ 
+}
+
+.footer2-content li{
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+    
+    line-height:1.8;
+}
+.footer2-content a, h4{
+    color: white;
+    text-decoration:none;
+}
+.foot h4{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+}
+.foot h4 img{
+    height:20px;
+    width: 20px;
+}
+.foot input[type="email"], [type="submit"]{
+    height: 40px;
+    width:300px;
+    padding:5px;
+    border:0px;
+    outline:none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+}
+.button{
+    background-color: teal;
+    height:50px;
+    color: white;
+    width: 100px;
+    cursor:pointer;
+    margin-left:02px;
+}
+ .copyright{
+    background-color: rgba(0, 0, 0, 0.664);
+    height:100px;
+    font-size:0.9rem;
+    text-align: center;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media screen and (max-width:800px){
+    body{background:teal;}
+    .footer1, .footer2, .address, .foot, .email, .button, .tel, .copyright{width:100%;}
+}
+
+           
+@media (min-width:200px) and (max-width:500px){
+  *{
+    float: none;
+  }
+  .top1{
+    margin-right:20px;
+  }
+  .navbut{
+    margin-top: 20px;
+    margin-right: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    float:right;
+    cursor:pointer;
+  }
+  .navbut img{
+    width: 30px;
+    height: 30px;
+  }
+  .nav{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    top:50px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .nav ul{
+    margin-top: 50px;
+  }
+  .nav li{
+    display: block;
+    padding-bottom: 50px;
+  }
+  .navbar--open{
+    left: -40%;
+    z-index:200;
+  }
+
+  .top2 .box{
+    margin-left: 30px;
+  }
+  .book{
+    margin-left: 0;
+  }
+  .book input[type=text]{
+    height: 30px;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 10%;  
+    transition: 0.2s all;
+  }
+  .book input[type=text]:hover{
+    height: 34px;
+    width: 83%;
+    transition: 0.2s all;
+  }
+  .book form{
+    padding-left: 0;
+  }
+  .book input[type=submit]{
+    margin-left: 35%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+  }
+  .book p{
+    text-align: center;
+
+  }
+  .newbox{
+    width:100%;
+    margin-left: 10px;
+    float: top;
+    margin-top: 51%;
+    width: 90%;
+    background-color: white;
+    height: 40px;
+    position: relative;
+    opacity: 0.5;
+    z-index: 3;
+  }
+}
+@media(min-width:600px) and (max-width:1000px){
+  *{
+    float: none;
+  }
+  .top1{
+    margin-right:20px;
+  }
+
+
+  .navbut{
+    margin-top: 20px;
+    margin-right: 10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    float:right;
+    cursor:pointer;
+  }
+  .navbut img{
+    width: 30px;
+    height: 30px;
+  }
+  .nav{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    top:50px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .nav ul{
+    margin-top: 50px;
+  }
+  .nav li{
+    display: block;
+    padding-bottom: 50px;
+  }
+  .navbar--open{
+    left: -40%;
+    z-index:200;
+  }
+
+  .top2 .box{
+    margin-left: 30px;
+  }
+  .book{
+    margin-left: 0;
+  }
+  .book input[type=text]{
+    height: 30px;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 10%;  
+    transition: 0.2s all;
+  }
+  .book input[type=text]:hover{
+    height: 34px;
+    width: 83%;
+    transition: 0.2s all;
+  }
+  .book form{
+    padding-left: 0;
+  }
+  .book input[type=submit]{
+    margin-left: 45%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+  }
+  .book p{
+    text-align: center;
+
+  }
+  .newbox{
+    width:100%;
+    margin-left: 20px;
+    float: top;
+    margin-top: 51%;
+    width: 90%;
+    background-color: white;
+    height: 40px;
+    position: relative;
+    opacity: 0.5;
+    z-index: 3;
+  }
+}
