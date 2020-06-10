@@ -1,0 +1,128 @@
+*{
+    list-style: none;
+   
+  }
+  .container{
+      
+  }
+  
+  a{
+      text-decoration: none;
+      color:black;
+  }
+  a:hover{
+      color:#3291a8;
+  }
+  .top1{
+      float: right;
+      display: inline;
+      margin-right: 70px;
+      
+  }
+  .top1 select{
+      border: none;
+  }
+  .top1 nav li{
+      display: inline;
+      padding-left: 20px;
+      padding-bottom: 20px;
+  }
+ 
+  .top2{
+      padding-top: 50px;
+     
+      height: 50px;
+  }
+  .top2 .box{
+      width: 110px;
+      height: 110px;
+      background-color: #3291a8;
+      float: left;
+      margin-left: 90px;
+      opacity: 0.5;
+      position: absolute;
+      z-index: 31;
+
+  }
+  .top2 h2{
+      padding-top: 10px;
+      text-align: center;
+      color: white;
+  }
+  .top2 ul{
+      margin-left: 20%;
+  }
+  .top2 li{
+      display: inline;
+      padding-left: 20px;
+      font-size: 20px;
+  }
+    .top2 nav{
+        float: top;
+    }
+     .body img{
+      margin-top: 30px;
+      width:100%;
+      position: absolute;
+      display: block;
+      
+      
+  }
+    .book{
+        margin-left: 50px;
+        float: top;
+        width: 90%;
+        background-color: white;
+        height: 100%;
+        
+        
+       
+    }
+    .newbox{
+        margin-left: 50px;
+        float: top;
+        margin-top: 51%;
+        width: 90%;
+        background-color: white;
+        height: 30px;
+        position: relative;
+        opacity: 0.5;
+        z-index: 3;
+       
+    }
+    .book form{
+        opacity: 100%;
+        
+        padding-left: 2%;;
+        
+    }
+    .book input[type=text]{
+        opacity: 100%;
+        height: 30px;
+        width: 20%;
+        margin-left: 3%;  
+    }
+    .book p{
+        margin: 0;
+    }
+    .book input[type=submit]{
+        margin-top: 20px;
+        width: 100px;
+        height: 30px;
+       margin-left: 85%;
+       font-weight: bold;
+       background-color:#3291a8;
+       color:white;
+       border: none;
+    }
+    .book p{
+        line-height: 0px; 
+    }
+    .navbut{
+        display:none;
+    }
+   
+    
+   
+  
+    
