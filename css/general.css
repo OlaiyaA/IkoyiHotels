@@ -43,9 +43,6 @@ h6 {
   padding: 2.6%;
 }
 
-#facilities h3 {
-
-}
 
 .vector {
   width: 40%;
@@ -275,6 +272,7 @@ span{
   text-decoration: none;
 
 }
+
 .bg-img{
   position: initial;
   margin-top: 30px;
@@ -628,6 +626,13 @@ span:hover{
   text-align: center;
   margin-top: 50px;
 }
+.move-up span{
+  color:  #104f55;
+}
+.move-up span:hover{
+  color: white;
+  cursor:pointer;
+}
 
 /* mobile view*/
 
@@ -658,9 +663,7 @@ div.email,div.address, div.telephone{
   form{
    flex-direction: column;
   }
-  div.contact{
-
-  }
+  
   .subscribe{
       height: 40px;
   margin-top: 10px;
@@ -875,9 +878,7 @@ div.email,div.address, div.telephone{
     form{
      flex-direction: column;
     }
-    div.contact{
-
-    }
+    
     .subscribe{
         height: 40px;
     margin-top: 10px;
