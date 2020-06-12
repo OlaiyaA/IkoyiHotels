@@ -1,0 +1,750 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Roboto;
+  font-style: normal;
+  /* font-family: 'Roboto', sans-serif; */
+
+  background: #f5fafe;
+}
+
+/* styling for the lang section */
+@media screen and (min-width: 745px) {
+  .logoact-cover {
+    display: none;
+  }
+}
+@media screen and (max-width: 745px) {
+  .logoact-cov {
+    display: none;
+  }
+}
+
+#header {
+  background: #fafcfd;
+}
+#lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 70px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+#lang div {
+  padding: 0px 20px;
+}
+.headlinks {
+  margin-top: 15px;
+}
+
+#logact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 200px;
+
+  color: #000000;
+}
+
+.logo {
+  margin-left: 40px;
+  position: absolute;
+}
+#facili {
+  /* margin-left: 150px; */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; */
+}
+#facili ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #000000;
+  /* margin-left: 100px; */
+  margin-top: 20px;
+  padding-top: 30px;
+}
+#facili ul li {
+  padding-right: 30px;
+}
+#facili ul li a {
+  color: #000000;
+}
+#logacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.drop-nav {
+  background-color: transparent;
+  margin-top: 20px;
+  margin-right: 60px;
+  margin-left: 300px;
+  margin-bottom: 20px;
+}
+.drop-nav .dropbtn {
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  padding: 10px 10px;
+  background-color: #017a93;
+  font-family: inherit;
+  font-weight: bold;
+  margin: 0;
+}
+.drop-nav:hover .dropbtn {
+  background-color: white;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+.dropdown-content a {
+  float: none;
+  color: #000000;
+  text-align: left;
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.drop-nav:hover .dropdown-content {
+  display: block;
+}
+
+#bgsection {
+  height: 500px;
+  background-image: url("../assests/images/Hero\ Shot\(3\).svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* styling for the bookings section */
+#bookingsection {
+  height: 200px;
+  background: #e5e5e5;
+  margin: 0 20px;
+  position: relative;
+}
+#inputs {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+#inputs input {
+  padding: 7px 20px;
+}
+#inputs option {
+  padding: 7px 40px;
+}
+#bookings {
+  display: flex;
+
+  justify-content: space-around;
+  padding-top: 40px;
+}
+#bookings p {
+  padding-top: 10px;
+}
+
+/* styling for the covid section */
+#covidsect {
+  width: 100%;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+  color: #e5e5e5;
+  text-align: center;
+
+  background: #333333;
+}
+#covidsect p {
+  /* padding-left: 140px; */
+  padding-top: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* styling for the nav section */
+.head2 {
+  width: 100%;
+  height: 50px;
+  left: 1060.35px;
+  display: flex;
+
+  padding-left: 70%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+.headerlinks {
+  padding-top: 50px;
+}
+.headlinks a {
+  text-decoration: none;
+  margin-top: 20px;
+
+  color: black;
+  padding-left: 20px;
+}
+
+/* styling for the nav section */
+#navsection {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-left: 166px;
+}
+#navsection img {
+  position: absolute;
+}
+@media screen and (max-width: 600px) {
+  #covidsect p {
+    padding-left: 0px;
+    padding-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+  }
+
+  .head2 {
+    width: 100%;
+    height: 50px;
+    left: 1060.35px;
+    display: flex;
+
+    padding-left: 20%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  #navsection {
+    margin: 0;
+    padding-left: 10px;
+  }
+  .facility {
+    margin-left: 2px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .facility li {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .facility li a {
+    padding: 0 5px;
+  }
+
+  #lang {
+    padding-left: 100px;
+  }
+  #facilit {
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+  }
+  #logact {
+  }
+  .logo {
+    margin-left: 5px;
+    position: absolute;
+  }
+  #facili {
+    margin-left: 10px;
+  }
+  #facili ul {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+}
+
+/* end of the media section */
+
+.facility {
+  display: flex;
+  margin-left: 180px;
+}
+.facility li {
+  list-style: none;
+  margin-top: 35px;
+  margin-bottom: 20px;
+
+  justify-content: center;
+  text-align: center;
+}
+.facility li a {
+  text-decoration: none;
+  color: black;
+  padding: 0 15px;
+}
+/* styling for the .rect section by https://github.com/promise-J */
+
+.rect {
+  width: 100%;
+  height: 715px;
+  left: 0px;
+  background: url("../assests/images/Hero\ Shot\(3\).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#booking {
+  background: rgba(216, 233, 245, 0.4);
+}
+.booking {
+  display: flex;
+
+  justify-content: space-around;
+  height: 100px;
+  padding-top: 2.7rem;
+}
+.booking input,
+select {
+  border: 0;
+  border-bottom: black solid 0.5px;
+  height: 2.5rem;
+  padding: 5px 20px;
+}
+#week {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 600px) {
+  .booking {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .booking input,
+  select {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+h3 {
+  text-align: center;
+  padding: 15px 0;
+}
+h5 {
+  padding-top: 1.5em;
+  padding: 1.5em 2px;
+  font-size: 1em;
+  font-weight: 1000;
+}
+
+/* styling for the description section */
+#description {
+  display: flex;
+  margin: 0px 50px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  background: #f5fafe;
+}
+/* img section */
+.imgsection {
+  height: 300px;
+  width: 400px;
+
+  background-image: url("../assests/images/Rectangle\ 28\(1\).svg");
+  background-size: cover;
+  background-position: center;
+}
+i {
+  cursor: pointer;
+}
+.desctext {
+  padding-left: 40px;
+}
+.desctext p {
+  font-size: 16px;
+  padding: 10px 0;
+  line-height: 27px;
+}
+
+#facilities {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px 0;
+  margin: 0;
+  height: 20px;
+}
+/* styling for the button */
+button {
+  padding: 12px 25px;
+  color: #f5fafe;
+  background-color: #017a93;
+  border: none;
+  cursor: pointer;
+  position: right bottom;
+}
+button:hover {
+  padding: 12px 25px;
+  color: #f5fafe;
+  background-color: #017a93;
+  border: none;
+  cursor: pointer;
+}
+.bookings {
+  padding-top: 10px;
+  padding-left: 18.75em;
+  margin-right: 0;
+  border-right: 0;
+  font-size: 16px;
+}
+.bookings span {
+  padding-left: 10px;
+}
+
+.imgtwo {
+  height: 300px;
+  width: 400px;
+
+  background-image: url("../assests/images/Rectangle\ 15.svg");
+  background-size: cover;
+  background-position: center;
+}
+.imgthree {
+  height: 300px;
+  width: 400px;
+
+  background-image: url("../assests/images/Rectangle\ 28.svg");
+  background-size: cover;
+  background-position: center;
+}
+.amount {
+  font-weight: bolder;
+}
+/* media queries for the mobile devices */
+
+@media (max-width: 600px) {
+  .bookings {
+    padding-left: 5.25em;
+  }
+  h5 {
+    padding-bottom: 0.75em;
+    font-size: 1em;
+    font-weight: 1000;
+  }
+}
+
+/* styling for the next and previous images section */
+.fa-caret-left {
+  padding: 50% 100px;
+  padding-left: 20px;
+  padding-top: 40%;
+  font-size: 20px;
+}
+.fa-caret-right {
+  padding-left: 200px;
+  padding-right: 20px;
+  /* color: #017A93; */
+}
+
+/* styling for the see more section */
+a {
+  text-decoration: none;
+  color: #f5fafe;
+}
+#seemore {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+}
+#seemore button {
+  padding: 13px 60px;
+  color: #f5fafe;
+  background-color: #017a93;
+  border: none;
+  cursor: pointer;
+}
+/* end of the seemore design section */
+
+/* styling for the rserrvations sections */
+#reservations {
+  width: 100%;
+  height: 240px;
+  background: #f5fafe;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+.operations {
+  padding: 50px 50px;
+}
+.phonereseerve {
+  padding: 50px 50px;
+}
+.call {
+  font-weight: bolder;
+  font-size: 16px;
+}
+/* ,edia queries for responsiveness */
+@media (max-width: 600px) {
+  .operations {
+    padding: 0;
+
+    margin: 0;
+    border: 0;
+  }
+  .phonereseerve {
+    padding: 0;
+
+    margin: 0;
+    border: 0;
+  }
+  #reservations {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* styling for special offers and exclusive deals */
+.form {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+}
+form input {
+  padding: 10px 50px;
+  background: #f5fafe;
+}
+#specialoffers {
+  padding: 15px 0;
+}
+#specialoffers p {
+  text-align: center;
+}
+/* styling for the contact us page  */
+#contact {
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 3202px;
+  font-weight: 600;
+  line-height: 36px;
+  padding-bottom: 20px;
+  /* identical to box height */
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  background: #333333;
+}
+#contact h1 {
+  text-align: center;
+}
+.getintouch {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.con1,
+.con2,
+.con3 {
+  padding-right: 50px;
+  border-left: 3px solid #48cc64;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+@media (max-width: 600px) {
+  #contact .getintouch {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .con1,
+  .con2,
+  .con3 {
+    border: none;
+    padding: 0;
+    margin-bottom: 10px;
+
+    font-size: 17px;
+  }
+  .foot3 {
+    padding-top: 10%;
+    padding-right: 0;
+    margin: 0;
+    border: 0;
+    justify-content: center;
+    text-align: center;
+    padding-left: 30px;
+  }
+  .copyright {
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+  }
+  #footer {
+    width: 100%;
+    height: 300px;
+  }
+  #lang {
+    display: flex;
+    padding-left: 20px;
+
+    height: 40px;
+  }
+  #lang div {
+    padding: 0px 20px;
+  }
+  #inputs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #inputs input {
+    padding: 3px 12px;
+  }
+  #inputs option {
+    padding: 7px 20px;
+  }
+  #facilities {
+    line-height: 1rem;
+  }
+
+  .bookings {
+    padding: 10px 0px;
+  }
+  #footsection {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  .foot1,
+  .foot2,
+  .foot3 {
+    padding: 0;
+  }
+
+  .copyright {
+    padding-top: 20px;
+  }
+  .foot1 {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .foot2 {
+    padding-top: 0;
+  }
+  .foot3 {
+    padding-top: 0;
+    padding-right: 0;
+  }
+  .foot3 p {
+    font-size: 0;
+    padding: 0px 0px;
+  }
+  .foot3 input {
+    padding: 0px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #f5fafe;
+  }
+}
+/* styling for the footer section */
+#footer {
+  width: 100%;
+  height: 480px;
+  color: #f5fafe;
+
+  background: url("../assests/images/Rectangle\ 4.svg"), #000000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#footsection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.foot1 {
+  padding-left: 8%;
+  padding-top: 10%;
+}
+.foot2 {
+  padding-top: 10%;
+}
+.foot3 {
+  padding-top: 10%;
+  padding-right: 10%;
+}
+.foot3 p {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+.foot3 input {
+  padding: 10px 50px;
+  background: #f5fafe;
+}
+.copyright {
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+}
