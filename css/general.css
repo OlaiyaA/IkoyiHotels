@@ -34,7 +34,7 @@ h6 {
 }
 
 #facilities {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   width: 30%;
@@ -124,7 +124,7 @@ button {
   align-items: center; */
 }
 
-}
+
 .bed-spaces {
   padding-top: 40px;
 }
@@ -159,6 +159,7 @@ button {
 body{
   font-family: Poppins;
 }
+
 span{
   color: #333333;
 }
@@ -204,12 +205,14 @@ z-index:2px;
 }
 span{
     color: #333333;
+    /* margin-left: 6rem; */
 }
+
 .sign{
   position: absolute;
   width: 127px;
   height: 27px;
-  left: 1340px;
+  left: 840px;
   top: -30px; 
   font-family: Poppins;
   font-style: normal;
@@ -223,13 +226,13 @@ span{
   height: 120px;
   left: -490px;
   top: 5px;
-  z-index: 2px;
+  z-index: 2;
 }
 .language{
   position: absolute;
   width: 127px;
   height: 27px;
-  left: 1215px;
+  left: 740px;
   top: -30px; 
   
   font-family: Poppins;
@@ -256,18 +259,18 @@ span{
   font-weight: normal;
   display: flex;
   width: 1000px;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 27px;
   color: #333333;
   position: absolute;
-  left: 380px;
+  left: 338px;
   top: 25px;
   display: block ruby;
   width: -moz-available;
 
 }
 .nav-link{
-  padding-right: 30px;
+  padding-right: 15px;
   color: #333333;
   text-decoration: none;
 
@@ -912,7 +915,7 @@ button.signup{
 
 
 }
-@media  (max-width: 500px){
+@media (max-width: 500px){
    /* other options area*/
    .other{
         width:90%;
@@ -954,7 +957,7 @@ button.signup{
 .row1,.row2{
     text-align: center;
     position: relative;
-    left:30%;
+    /* left:30%; */
     line-height:1.7 ;
 }
 .row3 p{
@@ -964,7 +967,24 @@ button.signup{
     width:250px;
     margin-right: 20px;
 }
+.navbar{
+width: 50%;
+height: 60px;
+top: 0;
 }
+.nav-item{
+  display: flex;
+  width: 900px;
+  font-size: 14px;
+  left: 338px;
+  top: 25px;
+  display: block;
+}
+.navbar .language{
+  left: 0;
+}
+}
+
 @media(max-width:360px){
      /* special offer*/
      input{
@@ -1041,6 +1061,7 @@ ul{
   width:250px;
   margin-right: 20px;
 }
+
 }
 @media(max-width:360px){
    /* special offer*/
@@ -1061,5 +1082,5 @@ ul{
       width:250px;
       margin-right: 20px;
   }
-
+  
 }
