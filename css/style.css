@@ -7,29 +7,30 @@
 }
 html {
   scroll-behavior: smooth;
+  background: white;
 }
 body {
-  font-family: Roboto;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   /* font-family: 'Roboto', sans-serif; */
 
-  background: #f5fafe;
+  background: white;
 }
 
 /* styling for the lang section */
-@media screen and (min-width: 745px) {
+@media screen and (min-width: 945px) {
   .logoact-cover {
     display: none;
   }
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 945px) {
   .logoact-cov {
     display: none;
   }
 }
 
 #header {
-  background: #fafcfd;
+  background: #f5fafe;
 }
 #lang {
   display: flex;
@@ -43,12 +44,31 @@ body {
   line-height: 27px;
 }
 #lang div {
-  padding: 0px 20px;
+  background-color: transparent;
+}
+#lang select {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  padding-top: 10px;
+  background-color: transparent;
+  outline: none;
+  text-decoration: none;
+  border: none;
 }
 .headlinks {
-  margin-top: 15px;
+  margin-top: 10px;
 }
-
+.headlinks a {
+  color: #000000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
 #logact {
   display: flex;
   flex-direction: row;
@@ -59,6 +79,7 @@ body {
 }
 
 .logo {
+  margin-top: 8px;
   margin-left: 40px;
   position: absolute;
 }
@@ -81,7 +102,15 @@ body {
   padding-right: 30px;
 }
 #facili ul li a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
   color: #000000;
+}
+#facili ul li a:hover {
+  text-decoration: underline;
 }
 #logacts {
   display: flex;
@@ -176,7 +205,7 @@ body {
   height: 64px;
   left: 0px;
   top: 0px;
-  color: #e5e5e5;
+  /* color: #e5e5e5; */
   text-align: center;
 
   background: #333333;
@@ -191,9 +220,9 @@ body {
   line-height: 21px;
   /* identical to box height */
 
-  display: flex;
+  /* display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; */
 
   color: #ffffff;
 }
@@ -292,10 +321,10 @@ body {
   }
   #logact {
   }
-  .logo {
+  /* .logo {
     margin-left: 5px;
     position: absolute;
-  }
+  } */
   #facili {
     margin-left: 10px;
   }
@@ -350,7 +379,7 @@ body {
 select {
   border: 0;
   border-bottom: black solid 0.5px;
-  height: 2.5rem;
+  /* height: 2.5rem; */
   padding: 5px 20px;
 }
 #week {
@@ -364,12 +393,12 @@ select {
 
     flex-wrap: wrap;
   }
-  .booking input,
+  /* .booking input,
   select {
     border: 0;
     padding: 0;
     margin: 0;
-  }
+  } */
 }
 
 h3 {

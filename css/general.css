@@ -10,7 +10,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  /* background: #E5E5E5; */
+  background: white;
   color: #333333;
   font-style: normal;
   /* overflow-x: hidden; */
@@ -185,9 +185,10 @@ button {
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
 
-body {
+/* body {
   font-family: Poppins;
-}
+  background-color: #e5e5e5;
+} */
 
 span {
   color: #333333;
@@ -236,6 +237,9 @@ header {
   color: #ffffff;
 }
 /* styling for header area  */
+#header {
+  background: #f5fafe;
+}
 #lang {
   display: flex;
   flex-direction: row;
@@ -246,28 +250,32 @@ header {
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
-  margin-top: 15px;
 }
 #lang div {
-  padding: 0px 20px;
+  background-color: transparent;
 }
 #lang select {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
   padding-top: 10px;
-  border: none;
+  background-color: transparent;
   outline: none;
+  border: none;
 }
 .headlinks {
-  margin-top: 0px;
+  margin-top: 10px;
 }
 .headlinks a {
-  color: black;
+  color: #000000;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
 }
-
 #logact {
   display: flex;
   flex-direction: row;
@@ -278,7 +286,7 @@ header {
 }
 
 .logo {
-  margin-top: 60px;
+  margin-top: 8px;
   margin-left: 40px;
   position: absolute;
 }
@@ -301,6 +309,11 @@ header {
   padding-right: 30px;
 }
 #facili ul li a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
   color: #000000;
 }
 #logacts {
@@ -308,6 +321,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .drop-nav {
   background-color: transparent;
   margin-top: 20px;
@@ -330,15 +344,15 @@ header {
 .drop-nav:hover .dropbtn {
   background-color: white;
 }
-.dropdown-contents {
+.drop-nav .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 99;
 }
-.dropdown-contents a {
+.dropdown-content a {
   float: none;
   color: #000000;
   text-align: left;
@@ -346,18 +360,18 @@ header {
   padding: 12px 16px;
   text-decoration: none;
 }
-.dropdown-contents a:hover {
+.dropdown-content a:hover {
   background-color: #ddd;
 }
-.drop-nav:hover .dropdown-contents {
+.drop-nav:hover .dropdown-content {
   display: block;
 }
-@media screen and (min-width: 745px) {
+@media screen and (min-width: 945px) {
   .logoact-cover {
     display: none;
   }
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 945px) {
   .logoact-cov {
     display: none;
   }
@@ -476,22 +490,34 @@ span {
   color: #333333;
   text-decoration: none;
 }
-.bg-img {
+/* .bg-img {
   position: initial;
   margin-top: 0px;
   padding: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+} */
+.bg-imgC {
+  height: 500px;
+  background-image: url(" ../assests/images/Rectangle 30.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-imgF {
+  height: 500px;
+  background-image: url("../assests/images/hero-shot.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .bg-img2 {
-  background-size: auto;
-  margin-top: 0px;
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  height: 500px;
+  background-image: url("../assests/images/Rectangle 4.svg");
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 /* START CUSTOM CSS */
 .btn-area div {
@@ -567,32 +593,48 @@ span {
 }
 .facility-section {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
 }
-.restaurant-img {
-  width: 100%;
-  height: 100%;
-  background-image: url("../assests/images/restaurant-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.face {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  /* flex-direction: row; */
+}
+.res-img {
+  width: 50%;
+  height: auto;
 }
 .hall-img {
-  width: 100%;
-  height: 100%;
-  background-image: url("../assests/images/hall-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  width: 50%;
+  height: auto;
 }
 .fitness-img {
-  width: 100%;
-  height: 100%;
-  background-image: url("../assests/images/fitness-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  width: 50%;
+  height: auto;
+}
+@media screen and (max-width: 860px) {
+  .face {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+  .small-section-area {
+    width: 100%;
+  }
+
+  .res-img {
+    width: 100%;
+  }
+  .hall-img {
+    width: 100%;
+  }
+  .fitness-img {
+    width: 100%;
+  }
 }
 
 /* END FACILTIES SECTION */
@@ -618,9 +660,9 @@ img {
   width: 100%;
   height: 100%;
 }
-.bg-img {
+/* .bg-img {
   padding: 0;
-}
+} */
 
 .single-bed-space img {
   object-fit: cover;
@@ -1288,4 +1330,8 @@ span:hover {
 }
 #facilities p {
   height: auto;
+}
+.facility-res {
+  display: flex;
+  flex-wrap: wrap;
 }

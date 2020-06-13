@@ -17,52 +17,78 @@
     <title>Facilities Page</title>
   </head>
   <body>
-    <header class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-sm-6 top-nav">
-          <span class="update"
-            >COVID-19 UPDATE: Learn about our commitment to cleanliness and new
-            safety policies.</span
-          >
+    <div id="covidsect">
+      <p>
+        COVID-19 UPDATE: Learn about our commitment to cleanliness and new
+        safety policies.
+      </p>
+    </div>
+
+    <div id="header">
+      <div id="lang">
+        <div>
+          <select name="" id="">
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Portugese">Portugese</option>
+          </select>
+        </div>
+        <div class="headlinks">
+          <a href="#">Sign in or Join</a>
         </div>
       </div>
-      <nav class="navbar">
-        <div class="col-md-12 navbar">
-          <span class="language"
-            ><i class="fa fa-arrow-down"></i>&nbsp;English</span
-          >
-          <span class="dropdown-content"
-            ><ul>
-              <li>Spanish</li>
-              <li>Francais</li>
-              <li>Germans</li>
-            </ul></span
-          >
-          <span class="sign">Sign in or Join</span>
-          <a class="navbar-brand" href="#"
-            ><img src="../assests/images/logo.svg"
-          /></a>
-          <div class="nav-item in-line-block">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="">Special Offers</a>
-            <a class="nav-link" href="rooms-and-rates.html">Rooms & Suites</a>
-            <a class="nav-link" href="">Events</a>
-            <a class="nav-link" href="facilities.html">Facilities</a>
-            <a class="nav-link" href="contact-us.html">Contact Us</a>
-            <a class="nav-link" href="">About Ikoyi Hotels</a>
+
+      <!-- logo and activities section -->
+      <div class="logoact-cov">
+        <div class="logo">
+          <img src="../assests/images/logo.svg" alt="logo" />
+        </div>
+        <div id="logact">
+          <!-- <div class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div> -->
+
+          <div id="facili">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Special Offers</a></li>
+              <li><a href="rooms-and-rates.html">Rooms & Suites</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="facilities.html">Facilities</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="">About Ikoyi Hotels</a></li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 col-sm-6 bg-img">
-          <img class="bg-img2" src="../assests/images/hero-shot.svg" />
+      </div>
+      <div class="logoact-cover">
+        <div class="logo">
+          <img src="../assests/images/logo.svg" alt="logo" />
+        </div>
+        <div id="logacts">
+          <div class="drop-nav">
+            <button class="dropbtn">
+              Menu<span><i class="fa fa-caret-down"></i></span>
+            </button>
+            <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="">Special Offers</a>
+              <a href="rooms-and-rates.html">Rooms & Suites</a>
+              <a href="">Events</a>
+              <a href="facilities.html">Facilities</a>
+              <a href="contact-us.html">Contact Us</a>
+              <a href="">About Ikoyi Hotels</a>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+    <section>
+      <div class="bg-imgF"></div>
     </section>
     <!-- START BOOK NOW SECTION -->
-    <div class="ml-5 mr-5 book-now-section">
+    <div class="mb-5 book-now-section">
       <div class="content-row px-5">
         <div class="book-now-text-area">
           <div style="font-size: 20px; font-weight: 600;">
@@ -78,9 +104,9 @@
     <!-- END BOOK NOW SECTION -->
 
     <!-- START FACILITIES SECTION -->
-    <div class="ml-5 mr-5 text-center">
-      <div class="section-title mt-5 mb-5">FACILITIES</div>
-      <div class="facility-section mb-5">
+    <h4 class="text-center">FACILITIES</h4>
+    <div class="facility-section container-fluid">
+      <div class="face">
         <div class="small-section-area section-text-area mr-4">
           <div class="section-title mt-5 mb-5">5-STAR RESTAURANTS</div>
           <div class="section-text">
@@ -99,13 +125,14 @@
             <div class="px-4 mb-5" style="margin: auto;">EXPLORE</div>
           </div>
         </div>
-        <div class="large-section-area ml-4">
-          <div class="restaurant-img"></div>
+
+        <div class="res-img">
+          <img src="../assests/images/restaurant-image.png" alt="" />
         </div>
       </div>
-      <div class="facility-section mb-5">
-        <div class="large-section-area mr-4">
-          <div class="hall-img"></div>
+      <div class="face">
+        <div class="hall-img">
+          <img src="../assests/images/hall-image.png" alt="" />
         </div>
         <div class="small-section-area section-text-area ml-4">
           <div class="section-title mt-5 mb-5">ROYAL ALBERT HALL</div>
@@ -126,7 +153,7 @@
           </div>
         </div>
       </div>
-      <div class="facility-section mb-5">
+      <div class="face">
         <div class="small-section-area section-text-area mr-4">
           <div class="section-title mt-5 mb-5">ROYAL ALBERT HALL</div>
           <div class="section-text">
@@ -145,8 +172,9 @@
             <div class="px-4 mb-5" style="margin: auto;">EXPLORE</div>
           </div>
         </div>
-        <div class="large-section-area ml-4">
-          <div class="fitness-img"></div>
+
+        <div class="fitness-img">
+          <img src="../assests/images/fitness-image.png" alt="" />
         </div>
       </div>
     </div>
@@ -220,53 +248,55 @@
     </div>
 
     <footer>
-      <div class="footer">
-        <div class="row1">
-          <ul>
-            <li><a href="#">ABOUT IKOYI HOTELS</a></li>
-            <li><a href="#">VISION AND MISSION </a></li>
-            <li><a href="#">RESIDENCE</a></li>
-            <li><a href="#">FACILITIES</a></li>
-            <li><a href="#">CAREERS</a></li>
-          </ul>
-        </div>
-        <div class="row2">
-          <ul>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">PRIVACY POLICY </a></li>
-            <li><a href="#">FAQS</a></li>
-            <li><a href="#">TERMS & CONDITIONS </a></li>
-          </ul>
-        </div>
-        <div class="row3">
-          <p>Sign up to ikoyi hotels newsletter</p>
-          <form class="footer-form">
-            <input type="text" placeholder="" />
-            <button class="signup">SIGN UP</button>
-          </form>
+      <div class="foot">
+        <div class="footer">
+          <div class="row1">
+            <ul>
+              <li><a href="#">ABOUT IKOYI HOTELS</a></li>
+              <li><a href="#">VISION AND MISSION </a></li>
+              <li><a href="#">RESIDENCE</a></li>
+              <li><a href="#">FACILITIES</a></li>
+              <li><a href="#">CAREERS</a></li>
+            </ul>
+          </div>
+          <div class="row2">
+            <ul>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">PRIVACY POLICY </a></li>
+              <li><a href="#">FAQS</a></li>
+              <li><a href="#">TERMS & CONDITIONS </a></li>
+            </ul>
+          </div>
+          <div class="row3">
+            <p>Sign up to ikoyi hotels newsletter</p>
+            <form class="footer-form">
+              <input type="text" placeholder="" />
+              <button class="signup">SIGN UP</button>
+            </form>
 
-          <div class="social">
-            <p>
-              Follow us :
-              <a href="#"
-                ><span style="color: white;" class="fab fa-facebook-f"></span
-              ></a>
-              <a href="#"
-                ><span style="color: white;" class="fab fa-twitter"></span
-              ></a>
-              <a href="#"
-                ><span style="color: white;" class="fab fa-instagram"></span
-              ></a>
-              <a href="#"
-                ><span style="color: white;" class="fab fa-youtube"></span
-              ></a>
-            </p>
+            <div class="social">
+              <p>
+                Follow us :
+                <a href="#"
+                  ><span style="color: white;" class="fab fa-facebook-f"></span
+                ></a>
+                <a href="#"
+                  ><span style="color: white;" class="fab fa-twitter"></span
+                ></a>
+                <a href="#"
+                  ><span style="color: white;" class="fab fa-instagram"></span
+                ></a>
+                <a href="#"
+                  ><span style="color: white;" class="fab fa-youtube"></span
+                ></a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="copy">
-        <p>&copy; COPYRIGHT IKOYI HOTELS LLC 2020</p>
+        <div class="copy">
+          <p>&copy; COPYRIGHT IKOYI HOTELS LLC 2020</p>
+        </div>
       </div>
     </footer>
 
