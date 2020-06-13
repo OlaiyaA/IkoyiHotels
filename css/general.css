@@ -37,7 +37,7 @@ h6 {
   /* display: flex; */
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 25rem;
   height: 100%;
   background: #F5FAFE;
   padding: 2.6%;
@@ -45,7 +45,7 @@ h6 {
 
 
 .vector {
-  width: 40%;
+  min-width: 100%;
   height: 100%;
   background-image: url('../assests/images/Vector(1).svg');
   background-size: cover;
@@ -74,12 +74,18 @@ h6 {
 }
 main {
   /* margin-top: -1000px; */
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   width: 100%;
   height: 500px;
   padding-left: 3%;
   padding-right: 3%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  margin: 20px 0;
+  line-height: 1.3;
 }
 
 button {
